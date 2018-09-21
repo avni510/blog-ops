@@ -3,7 +3,7 @@
   "Statement": [
     {
       "Action": ["s3:PutObject", "s3:PutObjectAcl"],
-      "Resource": ["arn:aws:s3:::avni-blog/*"],
+      "Resource": ["${bucket_arn}/*"],
       "Effect": "Allow",
       "Principal":{
         "AWS":"arn:aws:iam::182416214218:root"
@@ -11,7 +11,7 @@
     },
     {
       "Action":["s3:GetObject"],
-      "Resource":["arn:aws:s3:::avni-blog/*"],
+      "Resource":["${bucket_arn}/*"],
       "Effect":"Allow",
       "Principal": "*"
     }

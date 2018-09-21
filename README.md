@@ -12,3 +12,4 @@ rake apply
 - map to custom domain
 - redirect http to https
 - add aws configure to rakefile (?)
+- blogpost on dns
